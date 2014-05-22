@@ -13,7 +13,8 @@ makeCacheMatrix <- function(x = matrix())
 	m <- NULL
 	
 	#This is the set function, it sets the value of matrix x to the matrix y and also m(inverse) to null 
-	set <- function(y) {
+	set <- function(y)
+	{
 		x <<- y
 		m <<- NULL
 	}
@@ -48,7 +49,8 @@ cacheSolve <- function(x, ...)
 	#This cchecks if the m is NULL or not.
 	#If it is not null, means that the inverse is cached
 	#Else it needs to calculate the inverse
-	if(!is.null(m)) {
+	if(!is.null(m))
+	{
 		message("getting cached data")
 		return(m)
 	}
